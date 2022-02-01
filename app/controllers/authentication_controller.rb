@@ -9,7 +9,7 @@ class AuthenticationController < ApplicationController
     end
 
     def payload
-        json_response(payload: { name: current_user.name, email: current_user.email })
+        json_response({ name: current_user.name, email: current_user.email })
     end
 
     private
